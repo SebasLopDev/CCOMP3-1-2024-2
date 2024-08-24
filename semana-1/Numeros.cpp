@@ -179,7 +179,7 @@ string numeros_1(int num){
     
 }
 
-//Del 100 al 999
+//Del 1 al 999
 string numeros_2(unsigned int num){  
     if (num < 100) {
         return numeros_1(num);
