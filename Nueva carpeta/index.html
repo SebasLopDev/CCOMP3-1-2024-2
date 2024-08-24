@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo Flexbox</title>
+        <style>
+            /* Estilos básicos */
+            body {
+                margin: 0;
+                font-family: Times, sans-serif;
+                
+                box-sizing: border-box;
+            }
+            h1{
+                font-size: 5rem;
+                color: beige;
+            }
+
+            .encabezado{
+                display: flex;
+                justify-content:space-around;
+                margin: 0 5rem;
+                
+            }
+            img{
+                display: block;
+                object-fit:cover;
+                border-radius: 50%;
+                height: fit-content;
+                margin:2rem 0 2rem 3rem;
+                
+                
+            }
+            .conteiner{
+                background-color: darkgray;
+                margin: 0;
+                
+            }
+
+            .nombre{
+                text-align: center;
+                padding: 0 5rem;
+                margin: 0 5rem;
+            }
+
+            .conteine_2{
+                display: flex;
+                margin: 0 5rem 0 0rem;
+                gap: 2rem;
+                justify-content:space-around;
+                
+
+            }
+
+            .line{
+                border-bottom: 0.2rem solid black;
+            }
+
+            aside{
+                background-color: darkgray;
+                width: 50%;
+                padding: 0 4rem 0 4rem;
+                
+            }
+
+            main{
+                
+            }
+        </style>    
+    </head>
+    <body>
+        <header class="conteiner">
+            <div class="encabezado">
+
+                <img src="foto2.jpg" alt="perfil" style="width: 200px;">
+                <div class="nombre">
+                    <h1 >Jose Martinez</h1>
+                    <h4>Estudiante de computacion</h4>
+    
+    
+                </div>
+            </div>
+
+        </header>
+        <div class="conteine_2">
+            <aside>
+                <div>
+                    <h2 class="line">CONTACTO</h2>
+                    <p>999 999 </p>
+                    <p>jose.martines</p>
+                </div>
+
+                <div>
+                    <h2 class="line">IDIOMAS</h2>
+                    <p>español:nativo</p>
+                </div>
+    
+            </aside>
+    
+            <main>
+                <h2 class="line">PERFIL</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora natus laborum aliquam assumenda dolorum! Voluptatibus, quaerat, deleniti molestiae excepturi nihil expedita laboriosam a odit vero nam veniam autem quo est.</p>
+            </main>
+
+        </div>
+        
+    </body>
+</html>
