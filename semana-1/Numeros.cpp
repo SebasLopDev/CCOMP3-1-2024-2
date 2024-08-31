@@ -191,7 +191,9 @@ string numeros_2(unsigned int num){
             int res=num%100;
             if(v==100 && res!=0){
                 return centenas(v)+"to "+numeros_1(res);
-            }else if(v>=200 && res!=0){
+            }
+            
+            else if(v>=200 && res!=0){
                 return centenas(v)+" "+numeros_1(res);
             }
             else{
@@ -223,10 +225,12 @@ string numeros_3(int num){
         if(var==1 && res!=0){
             return "mil " + numeros_2(res);
         }
+        else if(var==101){
+            return "ciento un mil " + numeros_2(res);
+        }
         else if(var<100){
             return numeros_1(var)+" mil " + numeros_2(res);
         }
-        
         else{
 
             return numeros_2(var) + " mil " + numeros_2(res);
