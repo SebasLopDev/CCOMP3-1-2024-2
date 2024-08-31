@@ -164,6 +164,9 @@ string numeros_1(int num){
         else if(num>=20){
             int v=(num/10)*10;            
             int res=num%10;
+            if(v==20 && res!=0){
+                return "veinti"+unidades(res);
+            }
             if(res!=0){
                 return decenas(v)+" y "+unidades(res);
             }
