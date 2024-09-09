@@ -217,12 +217,21 @@ string especial(int num){
         int d=((num%100)/10)*10;
         //int u=d%10;
         //centenas(c)+ decenas(d);
-        if(d==20){
+        if(d==20 && c==100){
             return centenas(c)+ "to veintiun mil ";
         }
-        else{
-            return centenas(c)+"to "+decenas(d)+" y un mil ";
+        else if(d==20 && c>100){
+            return centenas(c)+ " veintiun mil ";
         }
+        else if(d==0 && c>100){
+            return centenas(c)+" "+decenas(d)+"un mil ";
+        }
+        else{
+            return centenas(c)+" "+decenas(d)+" y un mil ";
+        }
+    }
+    else{
+        return "";
     }
 }
 
@@ -251,7 +260,7 @@ string numeros_3(int num){
         //else if(var<100){
             //return numeros_2(var)+" mil " + numeros_2(res);
         //}
-        else if(var%10==1 && var!=111){            
+        else if(var%10==1 && var!=111 && var!=211 && var!=311 && var!=411 && var!=511 && var!=611 && var!=711 && var!=811 && var!=911){            
             return especial(var)+numeros_2(res);
         }
         else{
