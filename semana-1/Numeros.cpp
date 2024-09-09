@@ -33,7 +33,7 @@ string unidades(int u){
         return "nueve";
     }
     else{
-        return "unidades";
+        return "";
     }
     
 }
@@ -211,6 +211,20 @@ string numeros_2(unsigned int num){
         return "fuera de rango num2";
     }
 }
+string especial(int num){
+    if(num%10==1){
+        int c=(num/100)*100;
+        int d=((num%100)/10)*10;
+        //int u=d%10;
+        //centenas(c)+ decenas(d);
+        if(d==20){
+            return centenas(c)+ "to veintiun mil ";
+        }
+        else{
+            return centenas(c)+"to "+decenas(d)+" y un mil ";
+        }
+    }
+}
 
 //Del 1 al 999,999
 string numeros_3(int num){
@@ -225,14 +239,20 @@ string numeros_3(int num){
     if(num>=1000 && num<1000000){
         int var=num/1000;
         int res=(num%1000);
-        if(var==1 && res!=0){
+        if(num==1000){
+            return "mil";
+        }
+        else if(var==1 && res!=0){
             return "mil " + numeros_2(res);
         }
         else if(var==101){
             return "ciento un mil " + numeros_2(res);
         }
-        else if(var<100){
-            return numeros_1(var)+" mil " + numeros_2(res);
+        //else if(var<100){
+            //return numeros_2(var)+" mil " + numeros_2(res);
+        //}
+        else if(var%10==1 && var!=111){            
+            return especial(var)+numeros_2(res);
         }
         else{
 

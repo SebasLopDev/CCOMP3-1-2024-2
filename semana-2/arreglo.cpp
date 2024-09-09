@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void merge(int *p,int *q){
-        
+void merge(int *p,int *q){        
     int temp;    
     int *ini=p;
     int *end = q+(q-p);
@@ -21,8 +20,7 @@ void merge(int *p,int *q){
             p++;
         }
 
-    }
-    
+    }    
     for(int *i=ini;i<end;i++){
         cout<<*i<<" ";
     }
