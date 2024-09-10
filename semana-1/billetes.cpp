@@ -24,7 +24,9 @@ void cambio(double money){
 
 
 int main(){
-    cambio(3545.70);
+    double dinero;
+    cin>>dinero;
+    cambio(dinero);
 
     return 0;
 }
