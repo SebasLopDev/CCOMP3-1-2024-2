@@ -226,6 +226,9 @@ string especial(int num){
         else if(d==0 && c>100){
             return centenas(c)+" "+decenas(d)+"un mil ";
         }
+        else if (c==100) {
+            return centenas(c) + "to " + decenas(d) + " y un mil ";
+        }
         else{
             return centenas(c)+" "+decenas(d)+" y un mil ";
         }
