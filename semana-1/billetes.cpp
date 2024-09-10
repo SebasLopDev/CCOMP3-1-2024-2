@@ -6,7 +6,7 @@ void cambio(double money){
     int aux =0;       
     int pRelat= static_cast<int>(money*100);
     int lista[]={20000,10000,5000,2000,1000,500,200,100,50,20,10};
-    cout<<"**********CAMBIO**********"<<endl;
+    cout<<"**********TIENES**********"<<endl;
     for(int i=0;i<11;i++){
         aux=pRelat/lista[i];               
         pRelat=pRelat-(lista[i]*aux);      
