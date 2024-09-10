@@ -220,6 +220,9 @@ string especial(int num){
         if(d==20 && c==100){
             return centenas(c)+ "to veintiun mil ";
         }
+        else if(num==21){
+            return "veintiun mil ";
+        }
         else if(d==20 && c>100){
             return centenas(c)+ " veintiun mil ";
         }
