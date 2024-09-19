@@ -149,7 +149,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <main class="container-main" >
         <div class="container-up">
-            <img src="./imagen/hannah-wei-aso6SYJZGps-unsplash.jpg" alt="imagen">
+            <img src="./imagen/cesar-rincon-XHVpWcr5grQ-unsplash.jpg" alt="imagen">
             <div class="nombre">
                 <h1><?= $nombre ?></h1>
                 <h2 class="h2_2"><?= htmlspecialchars($ocupacion) ?></h2>
