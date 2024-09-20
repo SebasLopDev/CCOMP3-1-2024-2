@@ -74,9 +74,9 @@
       border-radius: 15px;
       background-color: #3498db;
       color: #ffffff;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.3s;
+    
+      
+      
     }
 
     
