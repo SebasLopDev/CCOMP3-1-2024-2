@@ -174,9 +174,13 @@
               <label for="empresa">Empresa:</label>
               <input type="text" name="empresa[]" required><br><br>
             </div>
+            <button type="button" class="btn-eliminar btn" onclick="eliminarCampo(this)">Eliminar</button><br><br>
           </div>`;
         experienciaContainer.insertAdjacentHTML('beforeend', nuevoCampo);
       }
+      function eliminarCampo(element) {
+        element.parentElement.remove(); // Elimina
+      }      
 
       
       function agregarIdioma() {
@@ -196,6 +200,7 @@
                 <option value="Fluido">Fluido</option>
               </select><br><br>
             </div>
+            <button type="button" class="btn-eliminar btn" onclick="eliminarCampo(this)">Eliminar</button><br><br>
           </div>`;
         idiomasContainer.insertAdjacentHTML('beforeend', nuevoCampo);
       }
@@ -209,6 +214,7 @@
               <label for="aptitud">Aptitud:</label>
               <input type="text" name="aptitudes[]" required><br><br>
             </div>
+            <button type="button" class="btn-eliminar btn" onclick="eliminarCampo(this)">Eliminar</button><br><br>
           </div>`;
         aptitudesContainer.insertAdjacentHTML('beforeend', nuevoCampo);
       }
