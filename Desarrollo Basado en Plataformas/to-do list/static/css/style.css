@@ -1,0 +1,49 @@
+body{
+    background-color: rgba(42, 135, 241, 0.747);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    background-color: aliceblue;
+    width: 20rem;
+    
+    padding: 3rem;
+    border-radius: 10px;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(186, 207, 252);
+    border: 0;
+}
+.no-btn{
+    
+    padding: initial;
+    border-radius: initial;
+    background-color: initial;
+    border: initial;
+    width:32px;
+    height: 32px;
+    
+}
+
+input{
+    background-color: rgb(243, 241, 250);
+    border: none;
+    padding: 10px;
+    border-radius: 12px;
+}
+checkbox{
+    border-radius: 15px;
+}
+li{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+}
